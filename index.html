@@ -29,8 +29,8 @@
             <!-- FPS Calculator -->
             <div class="row">
                 <div class="col-md-4 mx-auto">
-                    <label for="fps-range" class="form-label">Max FPS: <span id="fps-val" class="text-success">125</span> <sup class="text-secondary" id="frame-time">Frametime: 8.00 ms</sup></label>
-                    <input type="range" class="form-range" min="0" max="1000" value="125" id="fps-range" oninput="">
+                    <label for="fps-range" class="form-label">Max FPS: <span id="fps-val"></span> <sup class="text-secondary" id="frame-time"></sup></label>
+                    <input type="range" class="form-range" min="0" max="62" value="7" id="fps-range" oninput="com_maxfps();">
                 </div>
             </div>
             <!-- Explanation -->
@@ -53,5 +53,6 @@
     </div>
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
