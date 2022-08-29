@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty - Max FPS Calculator</title>
+    <meta name="description" content="A simple calculator to set the correct FPS limit value in Call of Duty">
+    <meta name="author" content="FaArMa">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div class="d-flex align-items-center min-vh-100">
+        <div class="container">
+            <!-- No Script -->
+            <noscript class="text-danger text-center">
+                <h2>JavaScript is required</h2>
+                <p class="text-warning">This site requires JavaScript to work</p>
+            </noscript>
+            <!-- Title -->
+            <h3 class="text-center">
+                Call of Duty
+                <br>
+                Max FPS Calculator
+            </h3>
+            <br>
+            <!-- FPS Calculator -->
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <label for="fps-range" class="form-label">Max FPS: <span id="fps-val" class="text-success">125</span> <sup class="text-secondary" id="frame-time">Frametime: 8.00 ms</sup></label>
+                    <input type="range" class="form-range" min="0" max="1000" value="125" id="fps-range" oninput="">
+                </div>
+            </div>
+            <!-- Explanation -->
+            <br>
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <ul>
+                        <li class="text-success"><span class="text-secondary">A good choice</span></li>
+                        <li class="text-warning"><span class="text-secondary">A bit laggy</span></li>
+                        <li class="text-danger"><span class="text-secondary">Potential catastrophic effects</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Source code -->
+            <br>
+            <p class="text-center">
+                <a href="https://github.com/FaArMa/CoD-mFPSc" class="link-secondary" target="_blank" rel="noreferrer noopener">Source code</a>
+            </p>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
