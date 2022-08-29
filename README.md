@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <a href="#">
-    <img src="https://via.placeholder.com/180/192025/f8f9fa.png?text=C" alt="Call of Duty - Max FPS Calculator">
+    <img src="src/img/favicon/apple-touch-icon-precomposed.png" alt="Call of Duty - Max FPS Calculator">
   </a>
   <br>
   Call of Duty - Max FPS Calculator
@@ -10,7 +10,7 @@
 
 <h4 align="center">A simple calculator to set the correct FPS limit value in Call of Duty</h4>
 
-[![Screenshot](https://via.placeholder.com/1280x720/192025/f8f9fa.png?text=CoD-mFPSc)](https://faarma.github.io/CoD-mFPSc)
+[![Screenshot](https://i.imgur.com/eaGvX5g.png)](https://faarma.github.io/CoD-mFPSc)
 
 ## Why?
 Every *Call of Duty* game on PC has the same "problem" when it comes to limiting the FPS: it doesn't seem to respect the value you put on it.\
