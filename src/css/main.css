@@ -1,8 +1,3 @@
-body {
-    color: var(--bs-light);
-    background-color: var(--bs-dark);
-}
-
 ul {
     padding-left: 1.25rem;
 }
