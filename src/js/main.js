@@ -73,3 +73,29 @@ function cl_maxpackets() {
         pktNotice.innerHTML = "";
     }
 }
+
+function cl_packetdup() {
+    const rng = +document.getElementById("pktdup-range").value;
+    const val = document.getElementById("pktdup-val");
+    const ntc = document.getElementById("pktdup-notice");
+    if (rng >= 1 && rng <= 20) {
+        val.className = "text-success";
+        val.innerHTML = 0;
+    } else if (rng > 20 && rng <= 40) {
+        val.className = "text-success";
+        val.innerHTML = 1;
+    } else if (rng > 40 && rng <= 60) {
+        val.className = "text-warning";
+        val.innerHTML = 2;
+    } else if (rng > 60 && rng <= 80) {
+        val.className = "text-warning";
+        val.innerHTML = 3;
+    } else if (rng > 80 && rng <= 100) {
+        val.className = "text-danger";
+        val.innerHTML = 4;
+    } else {
+        val.className = "text-danger";
+        val.innerHTML = 5;
+    }
+    ntc.innerHTML = (rng == 120) ? "Ping: +" + rng + " ms" : "Ping: " + rng + " ms";
+}

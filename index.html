@@ -133,6 +133,36 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Packet Duplication -->
+                        <div class="row">
+                            <div class="col">
+                                <label for="pktdup-range" class="form-label d-inline">Packet Duplication: <span class="text-success" id="pktdup-val">0</span> <sup class="text-secondary" id="pktdup-notice">Ping: 1 ms</sup></label>
+                                <button type="button" class="btn btn-outline-secondary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#pktdupModal">?</button>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col">
+                                <input type="range" class="form-range" min="1" max="120" value="1" id="pktdup-range" oninput="cl_packetdup();">
+                            </div>
+                        </div>
+                        <!-- Packet Duplication Modal -->
+                        <div class="modal fade" id="pktdupModal" tabindex="-1" aria-labelledby="pktdupModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header bg-dark">
+                                        <h5 class="modal-title" id="pktdupModalLabel">Packet Duplication <span class="badge text-bg-secondary">cl_packetdup</span></h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-secondary">
+                                        <p>Duplicates packets sent out to combat packet loss.</p>
+                                        <p>It's a waste of bandwidth, so use it when you've packet loss (in addition to calling your <abbr title="Internet Service Provider">ISP</abbr> to fix the problem, assuming it's not server-side).</p>
+                                        <p>Some players recommend using it based on ping while others until it's playable.</p>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <!-- Source code -->
