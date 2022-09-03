@@ -56,6 +56,7 @@
                     <div class="row">
                         <div class="col">
                             <label for="fps-range" class="form-label">Max FPS: <span id="fps-val"></span> <sup class="text-secondary" id="frame-time"></sup></label>
+                            <button type="button" class="btn btn-outline-secondary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#fpsModal">?</button>
                         </div>
                         <div class="w-100"></div>
                         <div class="col">
@@ -68,6 +69,25 @@
                                 <li class="text-warning"><span class="text-secondary">A bit laggy</span></li>
                                 <li class="text-danger"><span class="text-secondary">Potential catastrophic effects</span></li>
                             </ul>
+                        </div>
+                    </div>
+                    <!-- FPS Modal -->
+                    <div class="modal fade" id="fpsModal" tabindex="-1" aria-labelledby="fpsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header bg-dark">
+                                    <h5 class="modal-title" id="fpsModalLabel">Max FPS <span class="badge text-bg-secondary">com_maxfps</span></h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark text-secondary">
+                                    <p>If you limit your FPS to 60 you'll see that they're actually limited to 62.</p>
+                                    <p>The idea of this calculator is to tell you the possible values to limit your FPS so you don't get any surprises.</p>
+                                    <p>Also the FPS affects the game physics (movement speed, fall damage, etc.), that's why you may see players who usually prefer 333 / 250 / 125 FPS.</p>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
