@@ -50,22 +50,26 @@
                 Max FPS Calculator
             </h3>
             <br>
-            <!-- FPS Calculator -->
             <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <label for="fps-range" class="form-label">Max FPS: <span id="fps-val"></span> <sup class="text-secondary" id="frame-time"></sup></label>
-                    <input type="range" class="form-range" min="0" max="62" value="7" id="fps-range" oninput="com_maxfps();">
-                </div>
-            </div>
-            <!-- Explanation -->
-            <br>
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <ul>
-                        <li class="text-success"><span class="text-secondary">A good choice</span></li>
-                        <li class="text-warning"><span class="text-secondary">A bit laggy</span></li>
-                        <li class="text-danger"><span class="text-secondary">Potential catastrophic effects</span></li>
-                    </ul>
+                <div class="col-xl-4 mx-auto">
+                    <!-- FPS Calculator -->
+                    <div class="row">
+                        <div class="col">
+                            <label for="fps-range" class="form-label">Max FPS: <span id="fps-val"></span> <sup class="text-secondary" id="frame-time"></sup></label>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <input type="range" class="form-range" min="0" max="62" value="7" id="fps-range" oninput="com_maxfps();">
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <ul>
+                                <li class="text-success"><span class="text-secondary">A good choice</span></li>
+                                <li class="text-warning"><span class="text-secondary">A bit laggy</span></li>
+                                <li class="text-danger"><span class="text-secondary">Potential catastrophic effects</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Source code -->
