@@ -1,7 +1,7 @@
 window.onload = function() {
     get_validfps();
     com_maxfps();
-}
+};
 
 let validfps = [];
 
@@ -34,5 +34,5 @@ function com_maxFrameTime(fps) {
     // Calculates and displays the frametime
     const ft = 1000 / fps;
     const frametime = document.getElementById("frame-time");
-    frametime.innerHTML = (fps != 0) ? 'Frametime: ' + ft.toFixed(2) + ' ms' : 'Unlimited FPS';
+    frametime.innerHTML = (fps != 0) ? "Frametime: " + ft.toFixed(2) + " ms" : "Unlimited FPS";
 }
