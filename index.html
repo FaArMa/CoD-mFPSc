@@ -107,12 +107,12 @@
                         <!-- Max Packets -->
                         <div class="row">
                             <div class="col">
-                                <label for="pkt-range" class="form-label d-inline">Max Packets: <span id="pkt-val" class="text-warning">125</span> <sup class="text-secondary" id="pkt-notice">Possibly out of range</sup></label>
+                                <label for="pkt-range" class="form-label d-inline">Max Packets: <span id="pkt-val"></span> <sup class="text-secondary" id="pkt-notice"></sup></label>
                                 <button type="button" class="btn btn-outline-secondary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#pktModal">?</button>
                             </div>
                             <div class="w-100"></div>
                             <div class="col">
-                                <input type="range" class="form-range" min="0" max="1000" value="125" id="pkt-range" oninput="">
+                                <input type="range" class="form-range" min="0" max="48" value="0" id="pkt-range" oninput="cl_maxpackets();">
                             </div>
                         </div>
                         <!-- Max Packets Modal -->
