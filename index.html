@@ -90,6 +90,42 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Button -->
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#showmore" aria-expanded="false" aria-controls="showmore" id="btn-show">
+                            Show more
+                        </button>
+                    </div>
+                    <div class="collapse border border-top-0 rounded-bottom border-secondary p-2 border-opacity-50" id="showmore">
+                        <!-- Max Packets -->
+                        <div class="row">
+                            <div class="col">
+                                <label for="pkt-range" class="form-label d-inline">Max Packets: <span id="pkt-val" class="text-warning">125</span> <sup class="text-secondary" id="pkt-notice">Possibly out of range</sup></label>
+                                <button type="button" class="btn btn-outline-secondary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#pktModal">?</button>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col">
+                                <input type="range" class="form-range" min="0" max="1000" value="125" id="pkt-range" oninput="">
+                            </div>
+                        </div>
+                        <!-- Max Packets Modal -->
+                        <div class="modal fade" id="pktModal" tabindex="-1" aria-labelledby="pktModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header bg-dark">
+                                        <h5 class="modal-title" id="pktModalLabel">Max Packets <span class="badge text-bg-secondary">cl_maxpackets</span></h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-secondary">
+                                        <p>If you've a stable 62 FPS (and limited to that value), then you should only send 62 packets per frame. If you notice that your connection doesn't support that much, you can lower it to 32.</p>
+                                        <p>Personally it has been a positive change to set the Max Packets value according to the Max FPS value.</p>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <!-- Source code -->
