@@ -1,6 +1,7 @@
 window.onload = function() {
     get_validfps();
     com_maxfps();
+    btn_showmore();
 };
 
 let validfps = [];
@@ -39,6 +40,23 @@ function com_maxFrameTime(fps) {
     const ft = 1000 / fps;
     const frametime = document.getElementById("frame-time");
     frametime.innerHTML = (fps != 0) ? "Frametime: " + ft.toFixed(2) + " ms" : "Unlimited FPS";
+}
+
+function btn_showmore() {
+    const btn = document.getElementById("btn-show");
+    const collapse = document.getElementById("showmore");
+    // This event fires immediately when the show instance method is called
+    collapse.addEventListener("show.bs.collapse", function() {
+        btn.classList.add("rounded-0");
+        btn.classList.add("rounded-top");
+        btn.innerHTML = "Show less";
+    });
+    // This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete)
+    collapse.addEventListener("hidden.bs.collapse", function() {
+        btn.classList.remove("rounded-0");
+        btn.classList.remove("rounded-top");
+        btn.innerHTML = "Show more";
+    });
 }
 
 function cl_maxpackets() {
